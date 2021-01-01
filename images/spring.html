@@ -1,0 +1,754 @@
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL index.php was not found on this server.</p>
+<hr>
+<address>Apache/2.2.22 (Linux) Server at Port 80</address>
+</body></html>1
+
+<link href="https://www.ocodewire.com/wp-content/themes/x/css/style.css" rel="stylesheet">
+<link href="https://www.ocodewire.com/wp-content/themes/x/custom_style.css" rel="stylesheet">
+<link href="https://www.ocodewire.com/wp-content/themes/x/css/bootstrap.min.css" rel="stylesheet">
+<!-- <script type="text/javascript" src="https://www.ocodewire.com/wp-content/themes/x/js/bootstrap.min.js"></script>-->
+<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+
+<script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+<script src="https://www.ocodewire.com/wp-content/themes/x/framework/js/jquery.bxslider.min.js"></script>
+<!--<script src="https://www.ocodewire.com/wp-content/themes/x/framework/js/jquery.easing.1.3.js"></script>-->
+<!-- bxSlider CSS file -->
+<link href="https://www.ocodewire.com/wp-content/themes/x/framework/js/jquery.bxslider.css" rel="stylesheet" />
+<script>
+$(document).ready(function() {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+
+    $('.accordion-section-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        }
+
+        e.preventDefault();
+    });
+    
+    var shrinkHeader = 50;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('.x-navbar.x-navbar-fixed-top').addClass('shrink');
+           $('.x-navbar .x-brand').addClass('shrink');
+           $('.x-navbar .x-nav > li > a').addClass('shrink');
+           
+        }
+        else {
+            $('.x-navbar.x-navbar-fixed-top').removeClass('shrink');
+            $('.x-navbar .x-brand').removeClass('shrink');
+            $('.x-navbar .x-nav > li > a').removeClass('shrink');
+            
+                   }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+
+  /** $(".job-table> tbody> tr:first-child").click(function(){
+    $(".job-table> tbody> tr:nth-child(2)").toggle(1000);
+});*/
+
+});
+  $(document).ready(function() {
+     $(".job-table tr:nth-child(2)").hide();
+     $('.job-table ').each(function(index, value){
+     var maintable = $(this);
+      maintable.find('tr:first-child a').click(function(event){
+      event.preventDefault();        
+      maintable.find('tr:nth-child(2)').toggle("slow");
+      });
+   });
+});
+</script>
+
+
+
+<!DOCTYPE html>
+<!--[if IE 9]><html class="no-js ie9" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Framework | ocodewire</title>
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="pingback" href="https://www.ocodewire.com/xmlrpc.php">
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="ocodewire &raquo; Feed" href="https://www.ocodewire.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ocodewire &raquo; Comments Feed" href="https://www.ocodewire.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ocodewire.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='jobman-display-css'  href='https://www.ocodewire.com/wp-content/plugins/job-manager/css/display.css?ver=0.7.25' type='text/css' media='all' />
+<link rel='stylesheet' id='pt-cv-public-style-css'  href='https://www.ocodewire.com/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=2.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.ocodewire.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://www.ocodewire.com/wp-content/plugins/revslider/rs-plugin/css/settings.css?rev=4.6.0&#038;ver=5.4.2' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='x-stack-css'  href='https://www.ocodewire.com/wp-content/themes/x/framework/css/site/stacks/integrity-light.css' type='text/css' media='all' />
+<link rel='stylesheet' id='x-font-standard-css'  href='//fonts.googleapis.com/css?family=Lato:400,400italic,400,400,400,700,700italic&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://www.ocodewire.com/wp-content/plugins/types/vendor/toolset/toolset-common/res/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='x-shortcodes-css'  href='https://www.ocodewire.com/wp-content/plugins/x-shortcodes/css/integrity-light.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpmu-animate-min-css-css'  href='https://www.ocodewire.com/wp-content/plugins/popover/css/animate.min.css?ver=5.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.ocodewire.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/plugins/job-manager/js/display.js?ver=0.7.25'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?rev=4.6.0&#038;ver=5.4.2'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?rev=4.6.0&#038;ver=5.4.2'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/themes/x/framework/js/dist/site/x-head.min.js'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/plugins/x-shortcodes/js/dist/site/x-shortcodes-head.min.js'></script>
+<link rel='https://api.w.org/' href='https://www.ocodewire.com/wp-json/' />
+<link rel="canonical" href="https://www.ocodewire.com/offerings/open-source-app-development/java-application-development/spring-framework/" />
+<link rel='shortlink' href='https://www.ocodewire.com/?p=772' />
+<link rel="alternate" type="application/json+oembed" href="https://www.ocodewire.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ocodewire.com%2Fofferings%2Fopen-source-app-development%2Fjava-application-development%2Fspring-framework%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.ocodewire.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ocodewire.com%2Fofferings%2Fopen-source-app-development%2Fjava-application-development%2Fspring-framework%2F&#038;format=xml" />
+<meta property="og:site_name" content="ocodewire"><meta property="og:title" content="Spring Framework"><meta property="og:description" content="Spring is an open source application development framework which makes Java/J2EE development easier. Its layered architecture enables a programmer to choose any part of it in isolation. Spring is an ideal framework for test driven&hellip;"><meta property="og:image" content="https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal.png"><meta property="og:url" content="https://www.ocodewire.com/offerings/open-source-app-development/java-application-development/spring-framework/"><meta property="og:type" content="article"><link rel="shortcut icon" href="//www.ocodewire.com/wp-content/uploads/2015/08/favion.png"><meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<style id="x-customizer-css-output" type="text/css">body{background-color:#ffffff;}a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.x-topbar .p-info a:hover,.x-breadcrumb-wrap a:hover,.widget ul li a:hover,.widget ol li a:hover,.widget.widget_text ul li a,.widget.widget_text ol li a,.widget_nav_menu .current-menu-item > a,.x-widgetbar .widget ul li a:hover,.x-accordion-heading .x-accordion-toggle:hover,.x-comment-author a:hover,.x-comment-time:hover{color:#337ab7;}a:hover,.widget.widget_text ul li a:hover,.widget.widget_text ol li a:hover,.x-twitter-widget ul li a:hover,.x-recent-posts a:hover .h-recent-posts{color:#d80f0f;}.rev_slider_wrapper,a.x-img-thumbnail:hover,.x-slider-container.below,.page-template-template-blank-3-php .x-slider-container.above,.page-template-template-blank-6-php .x-slider-container.above{border-color:#337ab7;}.entry-thumb:before,.pagination span.current,.flex-direction-nav a,.flex-control-nav a:hover,.flex-control-nav a.flex-active,.jp-play-bar,.jp-volume-bar-value,.x-dropcap,.x-skill-bar .bar,.x-pricing-column.featured h2,.h-comments-title small,.x-entry-share .x-share:hover,.x-highlight,.x-recent-posts .x-recent-posts-img,.x-recent-posts .x-recent-posts-img:before{background-color:#337ab7;}.x-recent-posts a:hover .x-recent-posts-img{background-color:#d80f0f;}.x-nav-tabs > .active > a,.x-nav-tabs > .active > a:hover{box-shadow:inset 0 3px 0 0 #337ab7;}.x-container-fluid.width{width:84%;}.x-container-fluid.max{max-width:1200px;}.x-main{width:69.536945%;}.x-sidebar{width:25.536945%;}.x-topbar{background-color:transparent;}.x-topbar .p-info,.x-topbar .p-info a,.x-navbar .x-nav > li > a,.x-navbar .sub-menu a,.x-breadcrumb-wrap a,.x-breadcrumbs .delimiter{color:#b7b7b7;}.x-navbar .x-nav > li > a:hover,.x-navbar .x-nav > .sfHover > a,.x-navbar .x-nav > .current-menu-item > a,.x-navbar .sub-menu a:hover,.x-navbar .sub-menu .sfHover > a,.x-navbar .sub-menu .current-menu-item > a,.x-nav .x-megamenu > .sub-menu > li > a{color:#272727;}.x-navbar .x-nav > li > a:hover,.x-navbar .x-nav > .sfHover > a,.x-navbar .x-nav > .current-menu-item > a{box-shadow:inset 0 4px 0 0 #337ab7;}.x-navbar .x-nav > li > a{height:90px;padding-top:34px;}.sf-menu > li ul{top:75px;;}.x-comment-author,.x-comment-time,.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label,.widget_calendar #wp-calendar caption,.widget.widget_rss li .rsswidget{font-weight:400;}@media (max-width:979px){.x-navbar .x-nav-collapse .x-nav li a{color:#b7b7b7;box-shadow:none;}.x-navbar .x-nav-collapse .x-nav li a:hover,.x-navbar .x-nav-collapse .x-nav .current-menu-item > a{color:#272727;}.x-widgetbar{left:0;right:0;}}body{font-size:14px;font-style:normal;font-weight:400;}a:focus,select:focus,input[type="file"]:focus,input[type="radio"]:focus,input[type="submit"]:focus,input[type="checkbox"]:focus{outline:thin dotted #333;outline:5px auto #337ab7;outline-offset:-1px;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-style:normal;font-weight:400;letter-spacing:-1px;}.w-h{font-weight:400 !important;}.x-main.full{float:none;display:block;width:auto;}@media (max-width:979px){.x-main.full,.x-main.left,.x-main.right,.x-sidebar.left,.x-sidebar.right{float:none;display:block;width:auto !important;}}.entry-header,.entry-content{font-size:14px;}.x-brand{font-style:normal;font-weight:400;letter-spacing:-3px;}.x-navbar{font-size:12px;}body.x-navbar-fixed-top-active .x-navbar-wrap{height:90px;}.x-navbar-inner{min-height:90px;}.x-brand{font-size:54px;font-size:5.4rem;}.x-navbar .x-brand{margin-top:20px;}.x-navbar .x-nav > li > a{font-style:normal;font-weight:400;}.x-btn-navbar{margin-top:20px;;}.x-btn-navbar,.x-btn-navbar.collapsed{font-size:24px;}@media (max-width:979px){body.x-navbar-fixed-top-active .x-navbar-wrap{height:auto;}}.x-btn,.button,[type="submit"]{color:#ffffff;border-color:#8bc159;background-color:#8bc159;}.x-btn:hover,.button:hover,[type="submit"]:hover{color:#8bc159;border-color:#8bc159;background-color:#ffffff;}.x-btn.x-btn-real,.x-btn.x-btn-real:hover{margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);}.x-btn.x-btn-real{box-shadow:0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-real:hover{box-shadow:0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-flat,.x-btn.x-btn-flat:hover{margin-bottom:0;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);box-shadow:none;}.x-btn.x-btn-transparent,.x-btn.x-btn-transparent:hover{margin-bottom:0;border-width:3px;text-shadow:none;text-transform:uppercase;background-color:transparent;box-shadow:none;}.x-btn-circle-wrap:before{width:172px;height:43px;background:url(https://www.ocodewire.com/wp-content/themes/x/framework/img/global/btn-circle-top-small.png) center center no-repeat;-webkit-background-size:172px 43px;background-size:172px 43px;}.x-btn-circle-wrap:after{width:190px;height:43px;background:url(https://www.ocodewire.com/wp-content/themes/x/framework/img/global/btn-circle-bottom-small.png) center center no-repeat;-webkit-background-size:190px 43px;background-size:190px 43px;}.x-btn,.x-btn:hover,.button,.button:hover,[type="submit"],[type="submit"]:hover{text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);}</style>
+    <style id="x-customizer-css-custom" type="text/css">
+      body {
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+ font-size: 1.4rem;
+ line-height: 1.42857;}
+ body.home{background:#F4F3F3;}
+.home .x-navbar{
+background: #f4f3f3 none repeat scroll 0 0;
+box-shadow:none;
+border-bottom:0;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{font-family: inherit !important; letter-spacing:0px!imprtant;}
+.x-navbar .x-nav > li > a{
+color: hsl(210, 4%, 41%);
+font-size: 16px;}
+.home .entry-title{display:none;}
+.home .entry-wrap{background: #f4f3f3 none repeat scroll 0 0;
+box-shadow:none;}
+.home .entry-wrap{
+padding:0px;}
+.home .x-container-fluid.offset{
+margin:0px auto;
+}
+.home #x-content-band-1{
+padding:0px;
+}
+.home #x-content-band-3 .pt-cv-content-item{
+text-align:center;
+color:#fff;
+}
+.btn-group-lg > .btn, .btn-lg{
+font-size: 18px;
+padding: 10px 16px;
+}
+._blank.pt-cv-readmore.btn.btn-success.btn-sm{
+background:transparent;
+border:none;
+}
+._blank.pt-cv-readmore.btn.btn-success.btn-sm:hover{
+color:#8bc159;}
+.home #x-content-band-3 .pt-cv-title a{color:#fff;font-size: 24px;font-weight:normal;}
+.grow{padding-bottom: 53px;}
+.testimonial_slider__textonly .testimonial_content{
+color:#fff !important;
+font-style:normal!important;
+height:auto! important;
+width:66.66%!important;
+text-align:center!important;
+}
+.testimonial_site{
+text-align:center !important;
+color:#fff !important;
+}
+.testimonial_slider__textonly .testimonial_content_wrap::before{
+display:none;}
+#x-content-band-6 .x-content-band.vc.bg-image.parallax{
+background-size:100% 100% !important;
+background-position:0 !important;
+}
+.x-column.vc.whole {
+    text-align: center;
+}
+.widget ul, .widget ol {
+    background-color: transparent;
+    border: 0px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 0px!important;
+    box-shadow: none!important;
+    list-style: outside none none;
+    margin-left: 0;
+    overflow: hidden;
+}
+.widget_nav_menu ul li a::before, .widget_meta ul li a::before, .widget_pages ul li a::before{display:none;}
+.widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{
+border-bottom: 0 none!important;
+    box-shadow: 0px !important;
+    display: block;
+    padding: 0.65em 0.85em;
+}
+.x-colophon{
+ background-color: #F1F1F1!important;
+padding:28px 0 !important;
+box-shadow:none;
+border-top:0px;
+}
+.testimonial_slider__textonly .testimonial_by_wrap .testimonial_by_inner
+{
+margin:0 !important;
+}
+.widget_nav_menu ul li a:hover, .widget_meta ul li a:hover, .widget_pages ul li a:hover {
+background:none !important;
+}
+.widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{color:#337ab7!important;}
+.list-unstyled {
+    list-style: outside none none !important;color:#337ab7!important;
+}
+.list-unstyled a{
+color:#337ab7!important;
+}
+.widget ul, .widget ol{margin-left:53px!important;}
+.h-widget{ margin: 0 3em 0.5em!important;
+font-size:18px !important;
+font-weight: 500 !important;
+    line-height: 1.1;}
+.testimonial_by{text-align:center;color:#cc7c34!important;}
+.col-sm-4 a{
+ color: #7f7d7d;margin-left: 7px;
+}
+.btns {
+    margin-top: 2%;
+}
+
+.market .col-sm-4{text-align:center;}
+.btn.btn-lg.btn-primary.for {
+    margin-top: -2%;
+}
+.widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{box-shadow:none !important;}
+.widget_nav_menu ul li a, .widget_meta ul li a, .widget_pages ul li a{
+padding:1px !important;
+}
+.x-span3 li a{margin-bottom:5px;}
+
+.x-navbar .x-nav > li > a{
+letter-spacing:0px;
+}
+.entry-content.content p{
+color: hsl(30, 7%, 30%);
+    text-align: justify;
+}
+.home .excep {
+    color: hsl(28, 60%, 50%) !important;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.home p {
+    color: #fff !important;
+    text-align: center !important;
+}
+.btn.btn-lg.btn-primary:hover {
+    color: #fff !important;
+}
+i{color:hsl(30, 7%, 30%);}
+.x-colophon .widget_text ol li, .widget_text ul li{padding:2px!important;}
+.h-widget1 {
+    margin-top: 3%; margin-left: 18% !important;
+}
+.widget_nav_menu .current-menu-item > a{background:transparent;}
+.x-navbar{
+border-bottom:none;
+box-shadow:none;
+}
+.entry-content.content{font-size:16px;}
+.x-navbar.x-navbar-fixed-top.shrink {
+background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    border-bottom: 1px solid #8bc159;
+    height: 60px;
+-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+}
+.x-navbar .x-nav > li > a.shrink{
+padding-top: 24px;font-size: 14px;-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+}
+.x-navbar .x-brand.shrink{
+margin-top:13px;
+-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+}
+.x-navbar .x-nav > li > a:hover, .x-navbar .x-nav > .sfHover > a, .x-navbar .x-nav > .current-menu-item > a{box-shadow:none;}
+.x-navbar-fixed-top-active .x-navbar-wrap{
+margin-bottom:0px;
+}
+.x-navbar .x-nav > li > a:hover{
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+  
+    text-decoration: none;
+}
+.x-colophon.bottom {
+   background:#F1F1F1;
+    font-size: 1rem;
+    padding: 1px !important;
+    text-align: center;
+}
+.x-colophon + .x-colophon {
+    border-top: none;
+    box-shadow:none;
+}
+.x-colophon.bottom .x-colophon-content{
+font-weight: 400;
+font-size:14px;
+    letter-spacing: 0px;
+    line-height: 1;
+   color:#333;
+    margin: 8px 0 29px;
+}
+.pt-cv-thumbnail {
+    height: 120px;
+}
+.feature-only-img.wp-post-image{
+border: 1px solid #c8c8c8; border-radius: 2px; box-shadow: 0 1px 1px rgba(0,0,0,0.09); padding: 1px; background-color: white;
+}
+.container-fluid.bg{background:#fff;}
+.hero > a{
+color: #337ab7;
+}
+.blog-header span{
+margin-top:10px;
+}
+.pagination{display:block;margin:15px;}
+
+.about_us.man h2{margin-top:0px;}
+.current-menu-item > a{
+background-color: #fff9f2;
+  color: #8bc159 !important;
+    font-weight: bold;
+    text-decoration: none;}
+.navigation_top{
+left:0;right:0;top:0;position:absolute;height:70px;}
+navigation_top_menus{padding-top:28px;}
+dd{margin-left:0px;}
+.container-timeline {margin-top:21px;}
+.media-heading > a {
+    font-size: 24px;}
+.media-body > p {
+    color: hsl(210, 4%, 41%)!important;
+    font-size: 16px;
+    text-align: left!important;
+}
+h1, .h1 {
+    font-size: 36px;}
+
+.offering.man h2{margin-top:0px;}
+.get_in_touch{color:#fff;padding-bottom:30px;}
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    overflow:hidden;
+   margin-bottom:5%;
+   background:#f7f7f7;
+}
+ 
+/*----- Section Titles -----*/
+.accordion-section-title {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #faa050;
+    color: #faa050;
+    display: inline-block;
+    font-size: 16px;
+    height: 75px;
+    padding: 15px;
+    transition: all 0.15s linear 0s;
+    width: 100%;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#fff none repeat scroll 0 0;
+
+    text-decoration:none;
+
+ }
+ 
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+}
+
+.accordion-section-title::before {
+    content: "";
+    font-family: fontawesome;
+ text-decoration: inherit;
+    text-rendering: auto;
+margin-right: 10px;
+    transform: rotate(45deg);
+    transition: all 0.3s ease 0s;
+}
+
+#signup form.signup dd.field input, #signup form.signup dd.field select {
+    background: hsla(0, 0%, 0%, 0) none repeat scroll 0 0;
+    border: 2px solid hsl(0, 0%, 88%);
+    border-radius: 0;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    padding: 7px 12px;
+    width: 100%;
+}
+#signup form.signup dt {
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: normal;
+    margin: 7px 0;
+    padding: 0 20px 0 0;
+}
+#signup form.signup dt {
+    float: left;
+    text-align: right;
+    width: 35%;
+}
+#signup form.signup dd {
+    margin-bottom: 30px;
+    width: 65%;
+}
+#signup form.signup dd {
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.hero{color:#337ab7!important;
+line-height: 22px;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;}
+
+.wdpu-1294 .wdpu-content{
+padding: 50px 20px 20px 20px!important;
+}    </style>
+
+  </head>
+
+<body class="page-template page-template-offering page-template-offering-php page page-id-772 page-child parent-pageid-678 x-integrity x-integrity-light x-navbar-fixed-top-active x-full-width-layout-active x-full-width-active x-post-meta-disabled x-portfolio-meta-disabled wpb-js-composer js-comp-ver-4.1.3 vc_responsive x-v3_0_1 x-shortcodes-v2_5_2">
+
+  
+  <div id="top" class="site">
+
+  
+  
+
+  <header class="masthead masthead-inline" role="banner">
+    
+    
+
+  <div class="x-navbar-wrap">
+    <div class="x-navbar">
+      <div class="x-navbar-inner">
+        <div class="x-container-fluid max width">
+          
+
+<a href="https://www.ocodewire.com/" class="x-brand img" title="Open Source Web Development and Business Solutions Company">
+  <img src="//www.ocodewire.com/wp-content/uploads/2015/08/logo.png" alt="Open Source Web Development and Business Solutions Company"></a>          
+<a href="#" class="x-btn-navbar collapsed" data-toggle="collapse" data-target=".x-nav-collapse">
+  <i class="x-icon-bars"></i><span class="visually-hidden">Navigation</span>
+</a>
+
+<nav class="x-nav-collapse collapse" role="navigation">
+
+  <ul id="menu-main-menu" class="x-nav sf-menu"><li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="https://www.ocodewire.com/about-us/">About oCodewire</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-26"><a href="https://www.ocodewire.com/offerings/">Offerings</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://www.ocodewire.com/solutions/">Solutions</a></li>
+<li id="menu-item-639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-639"><a href="https://www.ocodewire.com/opportunities/">Opportunities</a></li>
+<li id="menu-item-322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="https://www.ocodewire.com/portfolio/">Portfolio</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://www.ocodewire.com/case-studies/">Case Studies</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230"><a href="https://www.ocodewire.com/faq/">FAQ</a></li>
+</ul>
+</nav> <!-- end .x-nav-collapse.collapse -->        </div>
+      </div> <!-- end .x-navbar-inner -->
+    </div> <!-- end .x-navbar -->
+  </div> <!-- end .x-navbar-wrap -->
+
+    
+    </header>
+
+  
+  
+
+
+<script>
+	jQuery(document).ready(function(){
+		
+		jQuery('.section-label').click(function(){			
+			jQuery(this).parent().children('.section-overlay').fadeIn('slow');
+		});
+		
+		jQuery('.action-close').click(function() {
+		 jQuery(this).parent().fadeOut('slow');			
+		});
+		
+		jQuery('#'+772).addClass('tablet_color');
+		
+		
+	});
+	</script>
+	
+	
+
+<div class="container-fluid inner_top">
+<div class="container">
+	
+<div class="col-md-2">	
+	<img width="200" height="200" src="https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal.png" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal.png 200w, https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal-150x150.png 150w, https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal-100x100.png 100w" sizes="(max-width: 200px) 100vw, 200px" /></div>	
+<div class="col-md-10">
+		</div>
+	<h1 style="margin-top: 0.75em;">Spring Framework</h1>
+	<p>Spring is an open source application development framework which makes Java/J2EE development easier. Its layered architecture enables a programmer to choose any part of it in isolation. Spring is an ideal framework for test driven projects.</p>
+</div>
+</div>
+
+	
+  
+<style>
+.container-fluid.inner_top{display:none;}
+</style>
+
+<div role="main"> <!-- class="x-main full off" -->
+		<div class="inner_top">
+	<div class="container">
+	<div class="entry-featured" style="float:left;">
+	<div class="entry-thumb" style="width: 16.6667%;float:left;">
+	<img width="200" height="200" src="https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal.png" class="attachment-full size-full wp-post-image" alt="" srcset="https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal.png 200w, https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal-150x150.png 150w, https://www.ocodewire.com/wp-content/uploads/2015/09/spring-by-pivotal-100x100.png 100w" sizes="(max-width: 200px) 100vw, 200px" />	</div>
+	<div class="col-md-10">
+	<h1 style="margin-top: 0.75em;">Spring Framework</h1>
+	<p>Spring is an open source application development framework which makes Java/J2EE development easier. Its layered architecture enables a programmer to choose any part of it in isolation. Spring is an ideal framework for test driven projects.</p>
+	</div>
+	</div>	
+	</div>	
+	</div>
+	<div class="entry-wrap" style="padding-top:0px;">
+			
+<div style='float:left;width:100%'></div>			</div>
+		
+</div>
+
+	</div>
+</div>
+<!--------------------------------------Get in touch section-------------------------------------------------->
+<div class="feature-list-item" id="signup">
+		  <div class="signup-section texture peach-dots">
+						<div class="container">
+												  <div class="row">
+																			<div class="col-xs-12">
+																			  <h3>Get In Touch With Us<span> For Free Quote</span></h3>
+																			</div>
+												  </div>
+										  <div class="row">
+														<div class="col-xs-12">
+																	  <div class="signup center-form" method="post">
+																					<dl>
+																							<div role="form" class="wpcf7" id="wpcf7-f397-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/offerings/open-source-app-development/java-application-development/spring-framework/#wpcf7-f397-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="397" />
+<input type="hidden" name="_wpcf7_version" value="5.0.3" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f397-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6">
+<dt>NAME</dt>
+<dd class="field">
+<span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+</dd>
+<dt>COMPANY EMAIL</dt>
+<dd class="field">
+<span class="wpcf7-form-control-wrap company-email"><input type="email" name="company-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
+</dd>
+</div>
+<div class="col-xs-12 col-sm-6">
+<div class="row phone">
+<dt>PHONE</dt>
+<dd class="field">
+<span class="wpcf7-form-control-wrap nimber"><input type="tel" name="nimber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" /></span>
+</dd>
+<dt>COMPANY NAME</dt>
+<dd class="field">
+<span class="wpcf7-form-control-wrap companyname"><input type="text" name="companyname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+</dd>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="row phone messagebox">
+<dt>MESSAGE</dt>
+<dd class="field">
+<span class="wpcf7-form-control-wrap textarea-42"><textarea name="textarea-42" cols="6" rows="3" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
+</dd>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<dd class="submit">
+<input type="hidden" name="isMac" value="false"><br />
+<br><br />
+<input type="hidden" name="pageSource" value="">
+</dd>
+<p>
+<input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit btn btn-lg btn-primary try" /></p>
+</div>
+</div>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>	  
+																					</dl>
+																	  </div>
+														</div>
+										  </div>
+						</div>
+		  </div>
+</div>
+
+
+  
+    
+  
+
+  <footer class="x-colophon top" role="contentinfo">
+    <div class="x-container-fluid max width">
+      <div class="x-row-fluid">
+
+        <div class="x-span3">
+ <h4 class="h-widget">Our Locations</h4>
+<div class="media" style="margin-top:0px;">
+           		
+		
+		<ul><strong>Browsewire Mohali Office</strong></p>
+<li class="address">BrowseWire Consulting Pvt. Ltd.<br />
+E-51, First Floor,<br />
+Industrial Area, PHASE 8<br />
+S.A.S NAGAR, MOHALI – 160068</li>
+</ul>
+	
+	
+	        
+        
+  </div><div id="text-3" class="widget widget_text">			<div class="textwidget"></div>
+		</div></div><div class="x-span3"><div id="nav_menu-5" class="widget widget_nav_menu"><h4 class="h-widget">Help &#038; Support</h4><div class="menu-footer_menu2-container"><ul id="menu-footer_menu2" class="menu"><li id="menu-item-562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562"><a href="https://www.ocodewire.com/about-us/">About oCodewire</a></li>
+<li id="menu-item-561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-561"><a href="https://www.ocodewire.com/testimonial/">Testimonial</a></li>
+<li id="menu-item-560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-560"><a href="https://www.ocodewire.com/portfolio/">Portfolio</a></li>
+</ul></div></div></div><div class="x-span3"><div id="nav_menu-6" class="widget widget_nav_menu"><h4 class="h-widget">Resources</h4><div class="menu-footer_menu3-container"><ul id="menu-footer_menu3" class="menu"><li id="menu-item-565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565"><a href="https://www.ocodewire.com/case-studies/">Case Studies</a></li>
+<li id="menu-item-282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-282"><a href="http://ocodewire.com/blog">Blog</a></li>
+<li id="menu-item-564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-564"><a href="https://www.ocodewire.com/faq/">FAQ</a></li>
+</ul></div></div></div><div class="x-span3"><div id="text-4" class="widget widget_text"><h4 class="h-widget">Social</h4>			<div class="textwidget"><ul class="list-unstyled">
+          <li><img src="https://www.ocodewire.com/wp-content/uploads/2015/09/1432669721_Social_networks_Facebook.png"><a href="https://www.facebook.com/OcodeWire" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><img src="https://www.ocodewire.com/wp-content/uploads/2015/09/1432669747_Social_networks_Twitter.png"><a href="https://twitter.com/browsewire" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><img src="https://www.ocodewire.com/wp-content/uploads/2015/09/1432669773_Social_networks_Google_Plus.png"><a href="https://plus.google.com/104327581610113198252/" target="_blank" rel="noopener noreferrer">Google+</a></li>
+        </ul></div>
+		</div></div>
+      </div> <!-- end .x-row-fluid -->
+    </div> <!-- end .x-container-fluid.max.width -->
+  </footer> <!-- end .x-colophon.top -->
+
+
+  
+    <footer class="x-colophon bottom" role="contentinfo">
+      <div class="x-container-fluid max width">
+
+        
+        
+                  <div class="x-colophon-content">
+             Copyright © 2017 oCodewire. All Right Reserved           </div>
+        
+      </div>
+    </footer>
+
+  
+
+  
+  </div> <!-- END #top.site -->
+
+  
+<script>window._popup_data = {"ajaxurl":"","do":"get_data","ajax_data":{"request_uri":"\/offerings\/open-source-app-development\/java-application-development\/spring-framework\/"}};</script><script type='text/javascript' src='https://www.ocodewire.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.ocodewire.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"311a95359b","is_admin":"","is_mobile":"","ajaxurl":"https:\/\/www.ocodewire.com\/wp-admin\/admin-ajax.php","lang":"","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.0.2'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/themes/x/framework/js/dist/site/x-body.min.js'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-includes/js/comment-reply.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/plugins/x-shortcodes/js/dist/site/x-shortcodes-body.min.js'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-content/plugins/popover/js/public.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://www.ocodewire.com/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+
+
+  
+
+  
+    
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NSDMXZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NSDMXZ');</script>
+<!-- End Google Tag Manager -->
+</body>
+</html>
